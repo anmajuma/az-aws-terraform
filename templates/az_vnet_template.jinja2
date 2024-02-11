@@ -1,0 +1,8 @@
+module "{{ vnet_module_name }}" {
+  source              = "git::https://github.com/Azure/azure-data-labs-modules.git//terraform/virtual-network?ref=v1.5.0&depth=1"
+  basename            = "{{ vnet_name }}"
+  address_space       = ["10.0.0.0/16"]
+  location            = "{{ vnet_location }}"
+  resource_group_name = module.{{ resource_group_name }}.name
+}
+

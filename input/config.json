@@ -1,0 +1,26 @@
+{
+    "projectName" : "LexCorpDataAnalyticsPlatform",
+    "cloudProvider" : "Azure",
+    "resourceConfig": 
+                {
+                    "resourceGroup" :[{
+                        "rg_module_name" : "resource_group_network",
+                        "rg_name" : "lexcorprg-dev" ,
+                        "rg_location" : "North Europe"
+                    } ],
+                    "virtualNetwork": [{
+                        "vnet_module_name" : "virtual_network",
+                        "vnet_name" : "lexcorp-dev",
+                        "vnet_location" : "North Europe",
+                        "resource_group_name" : "resource_group_network"
+                    }     
+                    ],
+                    "subNet": [{
+                        "snet_module_name" : "subnet_default",
+                        "subnet_name" : "lexcorp-dev",
+                        "resource_group_name" : "resource_group_network",
+                        "vnet_module_name" :  "virtual_network"
+                    }     
+                    ]
+                }
+}

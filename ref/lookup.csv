@@ -1,0 +1,4 @@
+resource_type,template_name
+resourceGroup,az_rg_template.jinja2
+virtualNetwork,az_vnet_template.jinja2
+subNet,az_subnet_template.jinja2
