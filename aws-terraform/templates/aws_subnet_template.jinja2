@@ -1,0 +1,10 @@
+resource "aws_subnet" "{{ subnet_name }}" {
+ vpc_id            =  aws_vpc.{{ vpc_rs_name }}.id
+ cidr_block        = "{{ subnet_cidr_block }}"
+ availability_zone = "{{ aws_azs_name }}"
+ 
+ tags = {
+   Name = "{{ subnet_name }}"
+ }
+}
+ 

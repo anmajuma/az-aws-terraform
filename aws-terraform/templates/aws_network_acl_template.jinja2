@@ -1,0 +1,25 @@
+resource "aws_network_acl" "{{ subnet_rs_name }}" {
+  vpc_id = aws_vpc.{{ vpc_rs_name }}.id
+
+  egress {
+    protocol   = "{{ acl_protocol_egress }}"
+    rule_no    = {{ acl_rule_egress }}
+    action     = "{{ acl_action_egress }}"
+    cidr_block = "{{ acl_cidr_egress }}"
+    from_port  = {{ acl_from_port_egress }}
+    to_port    = {{ acl_from_to_egress }}
+  }
+
+  ingress {
+    protocol   = "{{ acl_protocol_ingress }}"
+    rule_no    = {{ acl_rule_ingress }}
+    action     = "{{ acl_action_ingress }}"
+    cidr_block = "{{ acl_cidr_ingress }}"
+    from_port  = {{ acl_from_port_ingress }}
+    to_port    = {{ acl_from_to_ingress }}
+  }
+
+  tags = {
+    Name = "{{ subnet_rs_name }}"
+  }
+}

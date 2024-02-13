@@ -1,0 +1,7 @@
+resource "aws_vpc" "{{ vpc_rs_name }}" {
+ cidr_block = "{{ vpc_cidr_block }}"
+ 
+ tags = {
+   Name = "{{ vpc_name }}"
+ }
+}
