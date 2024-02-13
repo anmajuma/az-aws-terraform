@@ -27,11 +27,11 @@ if __name__ == "__main__":
         fd.write(vs_template)
 
 # Opening JSON file
-    f = open('input/config.json')
+    f = open('./aws-terraform/input/config.json')
     data = json.load(f)
     resourceList = list(data['resourceConfig'].keys())
     counter = 0
-    lookupDF = pd.read_csv("ref/lookup.csv")
+    lookupDF = pd.read_csv("./aws-terraform/ref/lookup.csv")
     while counter < len(resourceList):
         rslt_df = lookupDF[lookupDF['resource_type'] == resourceList[counter]]['template_name']
         print(rslt_df.iloc[0])
