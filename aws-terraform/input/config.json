@@ -12,13 +12,15 @@
                         "subnet_name" : "subnet_private_101",
                         "vpc_rs_name" : "primary",
                         "subnet_cidr_block" :  "10.0.1.0/24",
-                        "aws_azs_name" : "us-east-1a"
+                        "aws_azs_name" : "us-east-1a" ,
+                         "env_name " : "dev"
                         }     ,
                         {
                             "subnet_name" : "subnet_private_102",
                             "vpc_rs_name" : "primary",
                             "subnet_cidr_block" :  "10.0.2.0/24",
-                            "aws_azs_name" : "us-east-1b"
+                            "aws_azs_name" : "us-east-1b",
+                            "env_name " : "test"
                             }  
                     ]
                 }
