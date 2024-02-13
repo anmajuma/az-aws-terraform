@@ -5,6 +5,7 @@ resource "aws_subnet" "{{ subnet_name }}" {
  
  tags = {
    Name = "{{ subnet_name }}"
+   Environment = "{{ env_name }}"
  }
 }
  
