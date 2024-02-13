@@ -43,6 +43,7 @@ if __name__ == "__main__":
     )
     # Write template to file
         with open(os.getcwd() + "/main.tf", "a") as fd:
+            vs_template =str(vs_template).replace("'", '"')
             fd.write("\n")
             fd.write(vs_template)
             print(rslt_df.iloc[0] + "-terraform script created")

@@ -4,6 +4,6 @@ module "{{ snet_module_name }}"  {
   name                                      = "{{ subnet_name }}"
   resource_group_name                       = module.{{ resource_group_name }}.name
   vnet_name                                 = module.{{ vnet_module_name }}.name
-  address_prefixes                          = ["10.0.1.0/24"]
+  address_prefixes                          = {{ snet_addr_prefix }}
   private_endpoint_network_policies_enabled = true
 }

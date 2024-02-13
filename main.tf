@@ -36,6 +36,6 @@ module "subnet_default"  {
   name                                      = "lexcorp-dev"
   resource_group_name                       = module.resource_group_network.name
   vnet_name                                 = module.virtual_network.name
-  address_prefixes                          = ["10.0.1.0/24"]
+  address_prefixes                          = ["10.0.1.0/24", "10.0.1.0/32"]
   private_endpoint_network_policies_enabled = true
 }

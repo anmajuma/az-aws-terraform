@@ -19,7 +19,8 @@
                         "snet_module_name" : "subnet_default",
                         "subnet_name" : "lexcorp-dev",
                         "resource_group_name" : "resource_group_network",
-                        "vnet_module_name" :  "virtual_network"
+                        "vnet_module_name" :  "virtual_network",
+                        "snet_addr_prefix" : ["10.0.1.0/24","10.0.1.0/32"]
                     }     
                     ]
                 }
