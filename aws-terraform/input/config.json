@@ -9,13 +9,13 @@
                         "vpc_name" : "primary-vpc"
                     } ],
                     "subNet": [{
-                        "subnet_name" : "subnet_private_01",
+                        "subnet_name" : "subnet_private_101",
                         "vpc_rs_name" : "primary",
                         "subnet_cidr_block" :  "10.0.1.0/24",
                         "aws_azs_name" : "us-east-1a"
                         }     ,
                         {
-                            "subnet_name" : "subnet_private_02",
+                            "subnet_name" : "subnet_private_102",
                             "vpc_rs_name" : "primary",
                             "subnet_cidr_block" :  "10.0.2.0/24",
                             "aws_azs_name" : "us-east-1b"
