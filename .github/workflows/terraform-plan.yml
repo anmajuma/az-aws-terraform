@@ -7,7 +7,7 @@ env:
   TF_CLOUD_ORGANIZATION: "anmajuma"
   TF_API_TOKEN: "${{ secrets.TF_API_TOKEN }}"
   TF_WORKSPACE: "learn-terraform-github-actions"
-  CONFIG_DIRECTORY: "./cloud-terraform/aws-terraform"
+  CONFIG_DIRECTORY: "./aws-terraform"
 
 jobs:
   terraform:
